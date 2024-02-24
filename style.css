@@ -1,0 +1,275 @@
+.image-container {
+    display: flex;
+    flex-direction: row; /* Prevent wrapping onto multiple lines */
+     /* Enable horizontal scrolling if needed */
+    margin-left: 15px;
+ 
+}
+/* small devices */
+@media screen and (width < 600px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* background-color: brown; */
+    }
+    #About p{
+ width: 20px;
+    }
+    .image-container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    .image-container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        /* background-color: yellow; */
+    }
+    
+}
+/* medium screen */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+   .image-container{
+    display: flex;
+    flex-direction: column;
+   }
+   .image-container2{
+    display: flex;
+    flex-direction: column;
+   }
+   .image-container3{
+    display: flex;
+    flex-direction: column;
+   }
+  }
+  /* large screen */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   .image-container{
+    display: flex;
+    flex-direction: column;
+   }
+   .image-container2{
+    display: flex;
+    flex-direction: column;
+   }
+   .image-container3{
+    display: flex;
+    flex-direction: column;
+   }
+  }
+  /* tablet */
+  /* portrait */
+  @media only screen and (min-width: 780px) and (max-width: 1024px) {
+    .image-container{
+     display: flex;
+     flex-direction: column;
+    }
+    .image-container2{
+     display: flex;
+     flex-direction: column;
+    }
+    .image-container3{
+     display: flex;
+     flex-direction: column;
+    }
+   }
+   /* landscape */
+   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .image-container{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container2{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container3{
+     display: flex;
+     flex-direction: row;
+    }
+   }
+   /* desktop and laptop */
+   /* small */
+   @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    .image-container{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container2{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container3{
+     display: flex;
+     flex-direction: row;
+    }
+   }
+   /* medium */
+   @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    .image-container{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container2{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container3{
+     display: flex;
+     flex-direction: row;
+    }
+   }
+   /* Large */
+   @media only screen and (width > 1921) {
+    .image-container{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container2{
+     display: flex;
+     flex-direction: row;
+    }
+    .image-container3{
+     display: flex;
+     flex-direction: row;
+    }
+   }
+
+  
+
+
+.image1 {
+    flex: 0 0 auto; /* Allow the images to maintain their original size */
+    margin-right: 10px; /* Adjust spacing between photos */
+    width: 350px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
+}
+.image1 img{
+    max-width: 100%; /* Ensure the image does not exceed the specified width */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
+}
+
+.image1:last-child {
+    margin-right: 0; /* Remove margin from the last photo */
+}
+.image-container2 {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping onto multiple lines */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    margin-left: 15px;
+}
+
+.image1 {
+    flex: 0 0 auto; /* Allow the images to maintain their original size */
+    margin-right: 10px; /* Adjust spacing between photos */
+    position: relative;
+}
+
+.image1:last-child {
+    margin-right: 0; /* Remove margin from the last photo */
+}
+.image-container3{
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping onto multiple lines */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+     margin-left: 15;
+}
+#input{
+    width: 95%;
+    height: 40px;
+    margin-left: 8px;
+}
+input[type="text"]::placeholder {
+    font-size: 16px; /* Increase placeholder font size */
+    font-family: Arial, sans-serif; /* Change placeholder font family */
+    font-weight: bold; /* Change placeholder font weight */
+    /* Add any other styles as needed */
+    margin-left: 15px;
+    text-align: justify;
+    
+}
+.map{
+    margin-left: 15px;
+}
+.but{
+    margin-left: 15px;
+}
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 5px;
+   margin-bottom: 20px;
+   overflow: hidden;
+   z-index: 1000;
+   position: sticky;
+}
+.other{
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+.other a{
+    margin: 5px;
+    text-decoration: none;
+}
+.BR a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.other :hover{
+  background-color: gray;
+}
+h1{
+    border-bottom: solid black;
+    margin-bottom: 20px;
+}
+.BR :hover{
+background-color: gray;
+}
+#par{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 0;
+    
+}
+#architect{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+}
+p span{
+background-color: black;
+border-radius: 4px;
+}
+.button{
+    background-color: grey;
+    width: 300px;
+    height: 40px;
+}
+.button :hover{
+    background-color: black;
+}
+.but{
+    width: 200px;
+    height: 30px;
+    color: aliceblue;
+    background-color: black;
+}
+.but :hover{
+    background-color: gray;
+}
+
